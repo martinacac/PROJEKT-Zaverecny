@@ -1,0 +1,170 @@
+/* pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+:root {
+    --cl-bg:#FFFFF9;
+    --cl-darkprimary:#01260E;
+    --cl-darktext:#011608;  
+    --cl-darksecondary:#913811;
+    --cl-label:#EC9B03;    /* rgb(236, 155, 3); */
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--cl-bg);
+    color: var(--cl-darktext);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-image: url(../images/austris-augusts-l6IErvbXrCs-unsplash.jpg);
+    background-size: cover;
+    min-height: 20em;
+    padding: 2em;
+    margin: 0;
+}
+
+.header__text {
+    color: var(--cl-label);
+    text-shadow: 1px 3px 6px rgba(1, 38, 14, 0.9), -1px -3px 6px rgba(1, 38, 14, 0.9);
+    font-size: 2.5em; /* pro PC zvětšit na 4em */
+}
+
+.header__text--sklonene {
+    font-style: italic;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.main {
+    padding: 2em; 
+}
+
+.tucne {
+    font-weight: bold;
+}
+
+.button {
+    padding: 1em 2em;
+    margin-top: 1em;
+    border: 2px solid var(--cl-darkprimary);
+    border-radius: 5px;
+    background-color: var(--cl-darkprimary);
+    color: var(--cl-bg);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1em;
+}
+
+.button:hover {
+    border: 2px solid var(--cl-label);
+    color: var(--cl-label)
+}
+
+.sluzby {
+    color: var(--cl-label);
+    text-shadow: 1px 3px 6px rgba(1, 38, 14, 0.9), -1px -3px 6px rgba(1, 38, 14, 0.9);
+    font-size: 2em;
+    background-size: cover;
+    min-height: 8em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.sluzby--udrzba {
+    background-image: url(../images/pexels-karolina-grabowska-4750274konev.jpg);
+}
+
+.sluzby--realizace {
+    background-image: url(../images/pexels-rodolfo-clix-1615785krumpac.jpg);
+}
+
+.sluzby--navrhy {
+    background-image: url(../images/sketch2.png)
+}
+
+.sluzby--travniky {
+    background-image: url(../images/pexels-pixabay-56011grass.jpg)
+}
+
+.sluzby--drevo {
+    background-image: url(../images/pexels-skitterphoto-9280drevo.jpg)
+}
+
+.sluzby--odpad {
+    background-image: url(../images//20231021_142135-01-01komposter.jpeg)
+}
+
+.kontakt, 
+.sluzba {
+    background-color: var(--cl-darkprimary);
+    color: var(--cl-bg);
+    padding: 2em;
+}
+
+.sluzba {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.sluzba__text {
+    margin-top: 0;
+}
+
+.kontakt__title {
+    color: var(--cl-label);
+}
+.kontakt__title--main {
+    color: var(--cl-bg);
+    margin-top: 0;
+}
+
+.kontakt__item {
+    color: var(--cl-bg);
+}
+
+.footer {
+    background-color: var(--cl-darktext);
+    color: #FFFFF9;
+    text-align: center;
+    padding: 2em;
+}
+
+/* ↓↓↓ styly pro formulář ↓↓↓ */
+
+.form-field--povinne {
+	color: red;
+}
+.form {
+	width: 100%;
+	max-width: 400px;
+    padding: 2em;
+}
+.form-field {
+	margin-bottom: 10px;
+}
+
+.form-field label {
+	display: block;
+	color:gray;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+	width: 100%;
+	max-width: 400px;
+	border: 1px solid gray;
+	border-radius: 4px;
+	padding: 5px;
+}
+
+/* ↑↑↑ styly pro formulář ↑↑↑ */
+
+@media screen and (min-width: 600px) {
+    .buttons {
+        display: flex;
+        gap: 20px;
+    }
+}

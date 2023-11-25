@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahradnické služby Gartner</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,700&family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<!-- sekce hlavička -->
+
+    <header class="header"><h1 class="header__text">ZAHRADNICKÉ SLUŽBY <span class="header__text header__text--sklonene">Gartner</span></h1></header>
+
+<!-- sekce formulář -->
+    <form class="form" action="https://formular.itgirls.cz" method="post">
+	
+        <h1 class="sluzby__text">Kontaktní formulář</h1>
+    
+        <div class="form-field">
+            <label for="jmeno">Jméno a příjmení <span class="form-field--povinne">*</span></label>
+            <input type="text" name="jmeno" id="jmeno" required>
+        </div>
+    
+        <div class="form-field">
+            <label for="email">E-mail <span class="form-field--povinne">*</span></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+    
+        <div class="form-field">
+            <label for="tel">Telefon</label>
+            <input type="tel" name="tel" id="tel">
+        </div>
+    
+        <div class="form-field">
+            <label for="dotaz">Co mě zajímá</label>
+            <select name="dotaz" id="dotaz">
+                <option value="nevybrano"></option>
+                <option value="dotaz">Dotaz na služby</option>
+                <option value="objednavka">Objednání služby</option>
+                <option value="kalkulace">Nezávazná kalkulace</option>
+            </select>
+        </div>
+    
+        <div class="form-field">
+            <label for="zprava">Zpráva</label>
+            <textarea name="zprava" id="zprava"
+            rows="10">
+            </textarea>
+        </div>	
+    
+        <div class="form-check">
+            <input type="checkbox" name="volej" id="volej">
+            <label for="volej">Zavolejte mi zpět.</label>
+        </div>
+    
+        <button class="button form__button" type="submit" name="tlacitko">Odeslat</button>
+    
+    </form>
+
+
+    <!-- sekce kontakt -->
+    <section class="kontakt">
+        <h2 class="kontakt__title kontakt__title--main">Kontakt</h2>
+        <h3 class="kontakt__title">Adresa:</h3>
+        <p>Patrik Gartner <br>
+           Zahradní 246 <br>
+           Medlešice
+        </p>
+        <h3 class="kontakt__title">Telefon:</h3>
+        <p>+420 605 456 789</p>
+
+        <h3 class="kontakt__title">E-mail:</h3>
+        <a class="kontakt__item" href="zahrady.gartner@seznam.cz">zahrady.gartner@seznam.cz</a>
+
+    </section>
+
+
+    <!-- sekce patička -->
+    <footer class="footer">
+        &#169 Vytvořeno pro kurz Staň se kodérkou od Czechitas.
+    </footer>
+
+</body>
+</html>
