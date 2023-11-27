@@ -19,7 +19,7 @@ body {
 }
 
 .header {
-    background-image: url(../images/austris-augusts-l6IErvbXrCs-unsplash.jpg);
+    background-image: url(../images/hero.jpg);
     background-size: cover;
     min-height: 20em;
     padding: 2em;
@@ -61,7 +61,8 @@ body {
     color: var(--cl-label)
 }
 
-.sluzby {
+.sluzby, 
+.grid__sluzby {
     color: var(--cl-label);
     text-shadow: 1px 3px 6px rgba(1, 38, 14, 0.9), -1px -3px 6px rgba(1, 38, 14, 0.9);
     font-size: 2em;
@@ -73,11 +74,11 @@ body {
 }
 
 .sluzby--udrzba {
-    background-image: url(../images/pexels-karolina-grabowska-4750274konev.jpg);
+    background-image: url(../images/konev.jpg);
 }
 
 .sluzby--realizace {
-    background-image: url(../images/pexels-rodolfo-clix-1615785krumpac.jpg);
+    background-image: url(../images/krumpac.jpg);
 }
 
 .sluzby--navrhy {
@@ -85,15 +86,15 @@ body {
 }
 
 .sluzby--travniky {
-    background-image: url(../images/pexels-pixabay-56011grass.jpg)
+    background-image: url(../images/grass.jpg)
 }
 
 .sluzby--drevo {
-    background-image: url(../images/pexels-skitterphoto-9280drevo.jpg)
+    background-image: url(../images/drevo.jpg)
 }
 
 .sluzby--odpad {
-    background-image: url(../images//20231021_142135-01-01komposter.jpeg)
+    background-image: url(../images/komposter.jpeg)
 }
 
 .kontakt, 
@@ -161,6 +162,60 @@ body {
 }
 
 /* ↑↑↑ styly pro formulář ↑↑↑ */
+
+/* ↓↓↓ styly pro udrzba ↓↓↓ */
+.grid__sluzby--strih {
+    background-image: url(../images/apples.jpg);
+}
+
+.grid__sluzby--hnoj {
+    background-image: url(../images/hnoj.jpg);
+}
+
+.grid__sluzby--strik {
+    background-image: url(../images/skudci.jpg);
+}
+
+.grid__sluzby--zavlaz {
+    background-image: url(../images/konev.jpg);
+}
+
+.grid__sluzby--mulc {
+    background-image: url(../images/mulc.jpg);
+}
+
+.grid__sluzby--plevel {
+    background-image: url(../images/clover.jpg);
+}
+
+/* ↑↑↑ styly pro udrzba ↑↑↑ */
+
+/* ↓↓↓ styly pro realizace ↓↓↓ */
+.grid__sluzby--okras {
+    background-image: url(../images/okras.jpg);
+}
+
+.grid__sluzby--uzit {
+    background-image: url(../images/uzit.jpg);
+}
+
+.grid__sluzby--predzahr {
+    background-image: url(../images/predzahr4.jpg);
+}
+
+.grid__sluzby--zahon {
+    background-image: url(../images/zahon.jpg); 
+}
+
+.grid__sluzby--plot {
+    background-image: url(../images/plot.jpg); 
+}
+
+.grid__sluzby--repre {
+    background-image: url(../images/repre.jpg); /* aktualizovat */
+}    
+/* ↑↑↑ styly pro realizace ↑↑↑ */
+
 
 @media screen and (min-width: 600px) {
     .buttons {
