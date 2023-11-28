@@ -212,9 +212,77 @@ body {
 }
 
 .grid__sluzby--repre {
-    background-image: url(../images/repre.jpg); /* aktualizovat */
+    background-image: url(../images/repre.jpg); 
 }    
 /* ↑↑↑ styly pro realizace ↑↑↑ */
+
+/* ↓↓↓ styly pro travniky ↓↓↓ */
+.grid__sluzby--vysev {
+    background-image: url(../images/grass.jpg);
+}
+
+.grid__sluzby--seceni {
+    background-image: url(../images/seceni.jpg);
+}
+
+.grid__sluzby--hnojeni {
+    background-image: url(../images/hnoj.jpg);
+}
+
+.grid__sluzby--herbicid {
+    background-image: url(../images/herbicid.jpg); 
+}
+
+.grid__sluzby--choroby {
+    background-image: url(../images/choroby.jpg); 
+}
+
+.grid__sluzby--zavlaha {
+    background-image: url(../images/zavlaha.jpg); 
+}
+/* ↑↑↑ styly pro travniky ↑↑↑ */
+
+/* ↓↓↓ styly pro odpad ↓↓↓ */
+.grid__sluzby--odvoz {
+    background-image: url(../images/komposter.jpeg);
+}
+
+.grid__sluzby--listi {
+    background-image: url(../images/listi.jpg);
+}
+
+.grid__sluzby--doprava {
+    background-image: url(../images/doprava.jpg);
+}
+/* ↑↑↑ styly pro odpad ↑↑↑ */
+
+/* ↓↓↓ styly pro drevo ↓↓↓ */
+.grid__sluzby--kaceni {
+    background-image: url(../images/kaceni.jpg);
+}
+
+.grid__sluzby--drevo {
+    background-image: url(../images/drevo.jpg);
+}
+
+.grid__sluzby--parez {
+    background-image: url(../images/parez.jpg);
+}
+/* ↑↑↑ styly pro drevo ↑↑↑ */
+
+/* ↓↓↓ styly pro navrhy ↓↓↓ */
+.grid__sluzby--plan {
+    background-image: url(../images/sketch2.png); /* update */
+}
+
+.grid__sluzby--vhodnost {
+    background-image: url(../images/vhodnost.jpg);
+}
+
+.grid__sluzby--teren {
+    background-image: url(../images/teren.jpg);
+}
+/* ↑↑↑ styly pro navrhy ↑↑↑ */
 
 
 @media screen and (min-width: 600px) {
