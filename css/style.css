@@ -16,20 +16,21 @@ body {
     color: var(--cl-darktext);
     margin: 0;
     padding: 0;
+    /* max-width: 1600px; */
 }
 
 .header {
     background-image: url(../images/hero.jpg);
     background-size: cover;
-    min-height: 20em;
-    padding: 2em;
+    min-height: 28rem;
+    padding: 2rem;
     margin: 0;
 }
 
 .header__text {
     color: var(--cl-label);
     text-shadow: 1px 3px 6px rgba(1, 38, 14, 0.9), -1px -3px 6px rgba(1, 38, 14, 0.9);
-    font-size: 2.5em; /* pro PC zvětšit na 4em */
+    font-size: 4rem; /* pro PC zvětšit na 4rem */
 }
 
 .header__text--sklonene {
@@ -38,7 +39,7 @@ body {
 }
 
 .main {
-    padding: 2em; 
+    padding: 2rem; 
 }
 
 .tucne {
@@ -46,14 +47,14 @@ body {
 }
 
 .button {
-    padding: 1em 2em;
-    margin-top: 1em;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
     border: 2px solid var(--cl-darkprimary);
     border-radius: 5px;
     background-color: var(--cl-darkprimary);
     color: var(--cl-bg);
     font-family: 'Work Sans', sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .button:hover {
@@ -61,15 +62,19 @@ body {
     color: var(--cl-label)
 }
 
+.wrapper {
+    margin: 1.5rem 0;
+}
+
 .sluzby, 
 .grid__sluzby {
     color: var(--cl-label);
     text-shadow: 1px 3px 6px rgba(1, 38, 14, 0.9), -1px -3px 6px rgba(1, 38, 14, 0.9);
-    font-size: 2em;
+    font-size: 2rem;
     background-size: cover;
-    min-height: 8em;
-    margin-top: 1em;
-    padding: 1em;
+    min-height: 20rem;
+    margin-top: 1rem;
+    padding: 1rem;
     border-radius: 5px;
 }
 
@@ -82,7 +87,7 @@ body {
 }
 
 .sluzby--navrhy {
-    background-image: url(../images/sketch2.png)
+    background-image: url(../images/sketch.jpeg)
 }
 
 .sluzby--travniky {
@@ -101,7 +106,7 @@ body {
 .sluzba {
     background-color: var(--cl-darkprimary);
     color: var(--cl-bg);
-    padding: 2em;
+    padding: 2rem;
 }
 
 .sluzba {
@@ -129,7 +134,7 @@ body {
     background-color: var(--cl-darktext);
     color: #FFFFF9;
     text-align: center;
-    padding: 2em;
+    padding: 2rem;
 }
 
 /* ↓↓↓ styly pro formulář ↓↓↓ */
@@ -140,7 +145,7 @@ body {
 .form {
 	width: 100%;
 	max-width: 400px;
-    padding: 2em;
+    padding: 2rem;
 }
 .form-field {
 	margin-bottom: 10px;
@@ -272,7 +277,7 @@ body {
 
 /* ↓↓↓ styly pro navrhy ↓↓↓ */
 .grid__sluzby--plan {
-    background-image: url(../images/sketch2.png); /* update */
+    background-image: url(../images/sketch.jpeg); 
 }
 
 .grid__sluzby--vhodnost {
@@ -289,5 +294,30 @@ body {
     .buttons {
         display: flex;
         gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .main {
+        padding: 3rem;
+    }
+    
+    .wrapper {
+        display: flex;
+        gap: 30px;
+    }
+
+    .wrapper__item {
+        flex-basis: 50%;
+    }
+
+    .wrapper__item--center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sluzby__text {
+        margin-top: 1rem;
     }
 }
