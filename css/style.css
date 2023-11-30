@@ -57,13 +57,25 @@ body {
     font-size: 1rem;
 }
 
+.button a {
+    text-decoration: none;
+}
+
 .button:hover {
     border: 2px solid var(--cl-label);
     color: var(--cl-label)
 }
 
+.button a:visited {
+    color:var(--cl-bg);
+}
+
 .wrapper {
     margin: 1.5rem 0;
+}
+
+.grid {
+    margin: 2rem 0;
 }
 
 .sluzby, 
@@ -112,6 +124,7 @@ body {
 .sluzba {
     margin: 0;
     text-transform: uppercase;
+    font-size: 2.5rem;
 }
 
 .sluzba__text {
@@ -297,8 +310,20 @@ body {
     }
 }
 
+@media screen and (min-width: 800px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
 @media screen and (min-width: 1000px) {
-    .main {
+    .main,
+    .footer,
+    .header,
+    .kontakt,
+    .sluzba {
         padding: 3rem;
     }
     
@@ -319,5 +344,13 @@ body {
 
     .sluzby__text {
         margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
     }
 }
