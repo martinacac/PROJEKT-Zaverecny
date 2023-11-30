@@ -1,356 +1,446 @@
 /* pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
 
 :root {
-    --cl-bg:#FFFFF9;
-    --cl-darkprimary:#01260E;
-    --cl-darktext:#011608;  
-    --cl-darksecondary:#913811;
-    --cl-label:#EC9B03;    /* rgb(236, 155, 3); */
+  --cl-bg: #fffff9; /* rgb(255, 255, 250) */
+  --cl-darkprimary: #01260e;
+  --cl-darktext: #011608;
+  --cl-darksecondary: #913811;
+  --cl-label: #ec9b03; /* rgb(236, 155, 3); */
+  --cl-pokus: rgb(179,181,179)
 }
 
 body {
-    font-family: 'Work Sans', sans-serif;
-    background-color: var(--cl-bg);
-    color: var(--cl-darktext);
-    margin: 0;
-    padding: 0;
-    /* max-width: 1600px; */
+  font-family: "Work Sans", sans-serif;
+  background-color: var(--cl-bg);
+  color: var(--cl-darktext);
+  margin: 0;
+  padding: 0;
+  /* max-width: 1600px; */
 }
 
 .header {
-    background-image: url(../images/hero.jpg);
-    background-size: cover;
-    min-height: 28rem;
-    padding: 2rem;
-    margin: 0;
+  background-image: url(../images/hero.jpg);
+  background-size: cover;
+  min-height: 28rem;
+  padding: 2rem;
+  margin: 0;
 }
 
 .header__text {
-    color: var(--cl-label);
-    text-shadow: 1px 3px 6px rgba(1, 38, 14, 0.9), -1px -3px 6px rgba(1, 38, 14, 0.9);
-    font-size: 4rem; /* pro PC zvětšit na 4rem */
+  color: var(--cl-label);
+  text-shadow: 1px 3px 6px rgba(1, 38, 14, 0.9),
+    -1px -3px 6px rgba(1, 38, 14, 0.9);
+  font-size: 4rem; /* pro PC zvětšit na 4rem */
 }
 
 .header__text--sklonene {
-    font-style: italic;
-    font-family: 'Shantell Sans', cursive;
+  font-style: italic;
+  font-family: "Shantell Sans", cursive;
 }
 
 .main {
-    padding: 2rem; 
+  padding: 2rem;
 }
 
 .tucne {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .button {
-    padding: 1rem 2rem;
-    margin-top: 1rem;
-    border: 2px solid var(--cl-darkprimary);
-    border-radius: 5px;
-    background-color: var(--cl-darkprimary);
-    color: var(--cl-bg);
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1rem;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border: 2px solid var(--cl-darkprimary);
+  border-radius: 5px;
+  background-color: var(--cl-darkprimary);
+  color: var(--cl-bg);
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
 }
 
 .button a {
-    text-decoration: none;
+  text-decoration: none;
+  color: var(--cl-bg)
 }
 
 .button:hover {
-    border: 2px solid var(--cl-label);
-    color: var(--cl-label)
+  background-color: var(--cl-darktext);
 }
 
 .button a:visited {
-    color:var(--cl-bg);
+  color: var(--cl-bg);
 }
 
 .wrapper {
-    margin: 1.5rem 0;
+  margin: 2rem 0;
+}
+
+.wrapper__item p {
+  margin-bottom: 0;
 }
 
 .grid {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 
-.sluzby, 
+.sluzby,
 .grid__sluzby {
-    color: var(--cl-label);
-    text-shadow: 1px 3px 6px rgba(1, 38, 14, 0.9), -1px -3px 6px rgba(1, 38, 14, 0.9);
-    font-size: 2rem;
-    background-size: cover;
-    min-height: 20rem;
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 5px;
+  color: var(--cl-label);
+  text-shadow: 1px 3px 6px rgba(1, 38, 14, 0.9),
+    -1px -3px 6px rgba(1, 38, 14, 0.9);
+  font-size: 2rem;
+  background-size: cover;
+  min-height: 20rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 .sluzby--udrzba {
-    background-image: url(../images/konev.jpg);
+  background-image: url(../images/konev.jpg);
 }
 
 .sluzby--realizace {
-    background-image: url(../images/krumpac.jpg);
+  background-image: url(../images/krumpac.jpg);
 }
 
 .sluzby--navrhy {
-    background-image: url(../images/sketch.jpeg)
+  background-image: url(../images/sketch.jpeg);
 }
 
 .sluzby--travniky {
-    background-image: url(../images/grass.jpg)
+  background-image: url(../images/grass.jpg);
 }
 
 .sluzby--drevo {
-    background-image: url(../images/drevo.jpg)
+  background-image: url(../images/drevo.jpg);
 }
 
 .sluzby--odpad {
-    background-image: url(../images/komposter.jpeg)
+  background-image: url(../images/komposter.jpeg);
 }
 
-.kontakt, 
+.kontakt,
 .sluzba {
-    background-color: var(--cl-darkprimary);
-    color: var(--cl-bg);
-    padding: 2rem;
+  background-color: var(--cl-darkprimary);
+  color: var(--cl-bg);
+  padding: 2rem;
 }
 
 .sluzba {
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 2.5rem;
+  margin: 1rem 0 0 0;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: var(--cl-label);
 }
 
 .sluzba__text {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .kontakt__title {
-    color: var(--cl-label);
+  color: var(--cl-label);
 }
 .kontakt__title--main {
-    color: var(--cl-bg);
-    margin-top: 0;
+  color: var(--cl-bg);
+  margin-top: 0;
 }
 
 .kontakt__item {
-    color: var(--cl-bg);
+  color: var(--cl-bg);
 }
 
 .footer {
-    background-color: var(--cl-darktext);
-    color: #FFFFF9;
-    text-align: center;
-    padding: 2rem;
+  background-color: var(--cl-darktext);
+  color: #fffff9;
+  text-align: center;
+  padding: 2rem;
 }
+
+/* ↓↓↓ styly pro menu ↓↓↓ */
+
+.menu__checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+.menu__toggler {
+  display: block;
+  cursor: pointer;
+  color: var(--cl-bg);
+  background-color: var(--cl-darkprimary);
+  padding: 1rem;
+}
+
+.menu__toggler:hover {
+  background-color: var(--cl-darktext);
+}
+
+.menu__list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: var(--cl-darkprimary);
+}
+
+.menu__item {
+  border-bottom: 1px solid var(--cl-bg);
+}
+
+.menu__link {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--cl-bg);
+}
+
+.menu__link:hover {
+  background-color: var(--cl-darktext);
+}
+
+@media screen and (max-width: 799px) {
+  .menu__checkbox:checked ~ .menu__list {
+    display: block;
+  }
+}
+
+.menu__link img {
+  height: 1.2rem;
+  padding: 0 2rem;
+}
+
+/* ↑↑↑ styly pro menu ↑↑↑ */
 
 /* ↓↓↓ styly pro formulář ↓↓↓ */
 
 .form-field--povinne {
-	color: red;
+  color: red;
 }
 .form {
-	width: 100%;
-	max-width: 400px;
-    padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
 }
 .form-field {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .form-field label {
-	display: block;
-	color:gray;
+  display: block;
+  color: gray;
 }
 
 .form-field input,
 .form-field textarea,
 .form-field select {
-	width: 100%;
-	max-width: 400px;
-	border: 1px solid gray;
-	border-radius: 4px;
-	padding: 5px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 5px;
 }
 
 /* ↑↑↑ styly pro formulář ↑↑↑ */
 
 /* ↓↓↓ styly pro udrzba ↓↓↓ */
 .grid__sluzby--strih {
-    background-image: url(../images/apples.jpg);
+  background-image: url(../images/apples.jpg);
 }
 
 .grid__sluzby--hnoj {
-    background-image: url(../images/hnoj.jpg);
+  background-image: url(../images/hnoj.jpg);
 }
 
 .grid__sluzby--strik {
-    background-image: url(../images/skudci.jpg);
+  background-image: url(../images/skudci.jpg);
 }
 
 .grid__sluzby--zavlaz {
-    background-image: url(../images/konev.jpg);
+  background-image: url(../images/konev.jpg);
 }
 
 .grid__sluzby--mulc {
-    background-image: url(../images/mulc.jpg);
+  background-image: url(../images/mulc.jpg);
 }
 
 .grid__sluzby--plevel {
-    background-image: url(../images/clover.jpg);
+  background-image: url(../images/clover.jpg);
 }
 
 /* ↑↑↑ styly pro udrzba ↑↑↑ */
 
 /* ↓↓↓ styly pro realizace ↓↓↓ */
 .grid__sluzby--okras {
-    background-image: url(../images/okras.jpg);
+  background-image: url(../images/okras.jpg);
 }
 
 .grid__sluzby--uzit {
-    background-image: url(../images/uzit.jpg);
+  background-image: url(../images/uzit.jpg);
 }
 
 .grid__sluzby--predzahr {
-    background-image: url(../images/predzahr4.jpg);
+  background-image: url(../images/predzahr4.jpg);
 }
 
 .grid__sluzby--zahon {
-    background-image: url(../images/zahon.jpg); 
+  background-image: url(../images/zahon.jpg);
 }
 
 .grid__sluzby--plot {
-    background-image: url(../images/plot.jpg); 
+  background-image: url(../images/plot.jpg);
 }
 
 .grid__sluzby--repre {
-    background-image: url(../images/repre.jpg); 
-}    
+  background-image: url(../images/repre.jpg);
+}
 /* ↑↑↑ styly pro realizace ↑↑↑ */
 
 /* ↓↓↓ styly pro travniky ↓↓↓ */
 .grid__sluzby--vysev {
-    background-image: url(../images/grass.jpg);
+  background-image: url(../images/grass.jpg);
 }
 
 .grid__sluzby--seceni {
-    background-image: url(../images/seceni.jpg);
+  background-image: url(../images/seceni.jpg);
 }
 
 .grid__sluzby--hnojeni {
-    background-image: url(../images/hnoj.jpg);
+  background-image: url(../images/hnoj.jpg);
 }
 
 .grid__sluzby--herbicid {
-    background-image: url(../images/herbicid.jpg); 
+  background-image: url(../images/herbicid.jpg);
 }
 
 .grid__sluzby--choroby {
-    background-image: url(../images/choroby.jpg); 
+  background-image: url(../images/choroby.jpg);
 }
 
 .grid__sluzby--zavlaha {
-    background-image: url(../images/zavlaha.jpg); 
+  background-image: url(../images/zavlaha.jpg);
 }
 /* ↑↑↑ styly pro travniky ↑↑↑ */
 
 /* ↓↓↓ styly pro odpad ↓↓↓ */
 .grid__sluzby--odvoz {
-    background-image: url(../images/komposter.jpeg);
+  background-image: url(../images/komposter.jpeg);
 }
 
 .grid__sluzby--listi {
-    background-image: url(../images/listi.jpg);
+  background-image: url(../images/listi.jpg);
 }
 
 .grid__sluzby--doprava {
-    background-image: url(../images/doprava.jpg);
+  background-image: url(../images/doprava.jpg);
 }
 /* ↑↑↑ styly pro odpad ↑↑↑ */
 
 /* ↓↓↓ styly pro drevo ↓↓↓ */
 .grid__sluzby--kaceni {
-    background-image: url(../images/kaceni.jpg);
+  background-image: url(../images/kaceni.jpg);
 }
 
 .grid__sluzby--drevo {
-    background-image: url(../images/drevo.jpg);
+  background-image: url(../images/drevo.jpg);
 }
 
 .grid__sluzby--parez {
-    background-image: url(../images/parez.jpg);
+  background-image: url(../images/parez.jpg);
 }
 /* ↑↑↑ styly pro drevo ↑↑↑ */
 
 /* ↓↓↓ styly pro navrhy ↓↓↓ */
 .grid__sluzby--plan {
-    background-image: url(../images/sketch.jpeg); 
+  background-image: url(../images/sketch.jpeg);
 }
 
 .grid__sluzby--vhodnost {
-    background-image: url(../images/vhodnost.jpg);
+  background-image: url(../images/vhodnost.jpg);
 }
 
 .grid__sluzby--teren {
-    background-image: url(../images/teren.jpg);
+  background-image: url(../images/teren.jpg);
 }
 /* ↑↑↑ styly pro navrhy ↑↑↑ */
 
-
 @media screen and (min-width: 600px) {
-    .buttons {
-        display: flex;
-        gap: 20px;
-    }
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
 }
 
 @media screen and (min-width: 800px) {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .menu__toggler {
+    display: none;
+  }
+
+  .menu__list {
+    display: flex;
+
+  }
+  
+  .menu__item {
+    border-bottom: 0;
+    border-right: 1px solid var(--cl-bg);
+  }
+
+  .menu__item:last-child {
+    border-right: 0;
+  }
+
+  .menu__link {
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 1000px) {
-    .main,
-    .footer,
-    .header,
-    .kontakt,
-    .sluzba {
-        padding: 3rem;
-    }
-    
-    .wrapper {
-        display: flex;
-        gap: 30px;
-    }
+  .main,
+  .footer,
+  .header,
+  .kontakt,
+  .sluzba {
+    padding: 3rem;
+  }
 
-    .wrapper__item {
-        flex-basis: 50%;
-    }
+  .wrapper {
+    display: flex;
+    gap: 30px;
+  }
 
-    .wrapper__item--center {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+  .wrapper__item {
+    flex-basis: 50%;
+  }
 
-    .sluzby__text {
-        margin-top: 1rem;
-    }
+  .wrapper__item--center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sluzby__text {
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (min-width: 1300px) {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 3rem;
-    }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+  }
 }

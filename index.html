@@ -12,10 +12,30 @@
 </head>
 <body>
     
-<!-- sekce hlavička -->
+    <!-- sekce hlavička -->
 
     <header class="header"><h1 class="header__text">ZAHRADNICKÉ SLUŽBY <span class="header__text header__text--sklonene">Gartner</span></h1></header>
-    
+
+    <!-- sekce menu -->
+    <nav class="menu">
+
+		<input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+		<label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
+
+		<ul class="menu__list">
+			<li class="menu__item {{ 'menu__item--active' if page.fileSlug==='' }}"><a class="menu__link" href="index.html"><img src="images/home-page.svg" alt="Home"></a></li>
+			<li class="menu__item {{ 'menu__item--active' if page.fileSlug==='udrzba' }}"><a class="menu__link" href="udrzba.html">Údržba</a></li>
+			<li class="menu__item {{ 'menu__item--active' if page.fileSlug==='realizace' }}"><a class="menu__link" href="realizace.html">Realizace</a></li>
+			<li class="menu__item {{ 'menu__item--active' if page.fileSlug==='navrhy' }}"><a class="menu__link" href="navrhy.html">Návrhy</a></li>
+			<li class="menu__item {{ 'menu__item--active' if page.fileSlug==='travniky' }}"><a class="menu__link" href="travniky.html">Trávníky</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='drevo' }}"><a class="menu__link" href="drevo.html">Práce se dřevem</a></li>
+			<li class="menu__item {{ 'menu__item--active' if page.fileSlug==='bioodpad' }}"><a class="menu__link" href="bioodpad.html">Likvidace bioodpadu</a></li>
+			<li class="menu__item"><a class="menu__link" href="#kontakt">Kontakt</a></li>
+			<li class="menu__item {{ 'menu__item--active' if page.fileSlug==='formular' }}"><a class="menu__link" href="formular.html">Kontaktní formulář</a></li>
+		</ul>
+
+	</nav>
+
     <main class="main">
     <!-- sekce O nás -->
 
@@ -46,7 +66,9 @@
                     <p><span class="tucne">Postaráme se, aby Vaše zahrada rostla do krásy a aby Vám přinesla hojnou sklizeň.</span> Rádi převezmeme pravidelnou péči nebo uděláme jednorázově to, co Vaše zahrada aktuálně nejvíc potřebuje. Pečlivě, odborně a kvalitně.</p> 
                 </div>
                 <div class="buttons">
-                    <div class="button">Chci více informací...</div>
+                    <div class="button">
+                        <a href="udrzba.html">Chci více informací...</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,7 +84,9 @@
                     <p><span class="tucne">Ať už dáváte přednost okrasné nebo užitkové zahradě, potřebujete si zajistit soukromí živým plotem nebo udělat dojem na sousedy svojí předzahrádkou, jsme tu pro Vás.</span> Dovezeme, zasadíme, zajistíme nezbytnou péči, abyste se mohli brzy radovat z Vašeho zeleného prostoru.</p>
                 </div>
                 <div class="buttons">
-                    <div class="button">Chci více informací...</div>
+                    <div class="button">
+                        <a href="realizace.html">Chci více informací...</a>
+                    </div>
                 </div>
             </div>   
         </div>
@@ -78,7 +102,9 @@
                     <p><span class="tucne">Při navrhování zahrad vycházíme z představ zákazníka. Některé zahrady jsou zaměřené na okrasu, jiné spíše na užitnost.</span> Bereme v úvahu možnosti pozemku, náročnost jednotlivých rostlin na péči a prostor a estetická hlediska. Naším cílem je vytvořit prostor, kde se náš zákazník bude cítit dobře.</p>
                 </div>    
                 <div class="buttons">
-                    <div class="button">Chci více informací...</div>
+                    <div class="button">
+                        <a href="navrhy.html">Chci více informací...</a>
+                    </div>
                 </div>
             </div>   
         </div>
@@ -94,7 +120,9 @@
                     <p><span class="tucne">Chcete, aby byl Váš trávník potěšením pro oči?</span> S naší péčí zůstane Váš trávník svěží, zelený a hustý a bude Vaším oblíbeným místem pro odpočinek a relaxaci ve Vaší zahradě.</p>
                 </div> 
                 <div class="buttons">
-                    <div class="button">Chci více informací...</div>
+                    <div class="button">
+                        <a href="travniky.html">Chci více informací...</a>
+                    </div>
                 </div>
             </div>   
         </div>
@@ -110,7 +138,9 @@
                     <p><span class="tucne">Roste to, kde nechcete?</span> Ohrožuje Vás strom své okolí? Pokácíme nevhodně rostoucí, poničené nebo nemocné stromy. Zlikvidujeme pařezy.</p>
                 </div> 
                 <div class="buttons">
-                    <div class="button">Chci více informací...</div>
+                    <div class="button">
+                        <a href="drevo.html">Chci více informací...</a>
+                    </div>
                 </div>
             </div>   
         </div>
@@ -126,7 +156,9 @@
                     <p><span class="tucne">Postaráme se o veškerý nepotřebný bioodpad jako jsou větve, tráva, listí, zbytky rostlin nebo hlína.</span> Shrabeme, uklidíme, odvezeme. Ať nic nepřekáží a nenarušuje vzhled Vaší zahrady. Nebo naopak potřebujete něco přivézt?</p>
                 </div>
                 <div class="buttons">
-                    <div class="button">Chci více informací...</div>
+                    <div class="button">
+                        <a href="bioodpad.html">Chci více informací...</a>
+                    </div>
                 </div>
             </div>   
         </div>
