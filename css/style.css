@@ -38,7 +38,7 @@ body {
   color: var(--cl-label);
   text-shadow: 1px 3px 6px rgba(1, 38, 14, 0.9),
     -1px -3px 6px rgba(1, 38, 14, 0.9);
-  font-size: 4rem; /* pro PC zvětšit na 4rem */
+  font-size: 4rem; 
 }
 
 .header__text--sklonene {
@@ -154,6 +154,10 @@ body {
 }
 
 .kontakt__item {
+  color: var(--cl-bg);
+}
+
+.kontakt p {
   color: var(--cl-bg);
 }
 
@@ -375,6 +379,16 @@ body {
 }
 /* ↑↑↑ styly pro navrhy ↑↑↑ */
 
+@media screen and (max-width: 500px) {
+  .header__text {
+    font-size: 3rem; 
+  }
+  
+  .header__text--sklonene {
+    font-size: 4rem;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .buttons {
     display: flex;
@@ -388,7 +402,9 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
+}
 
+@media screen and (min-width: 940px) {
   .menu__toggler {
     display: none;
   }
