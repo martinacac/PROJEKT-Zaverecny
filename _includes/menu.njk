@@ -1,0 +1,18 @@
+<nav class="menu">
+
+    <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+    <label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
+
+    <ul class="menu__list">
+        <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='' }}"><a class="menu__link" href="/"><img src="../images/home-page.svg" alt="Home"></a></li>
+        <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='udrzba' }}"><a class="menu__link" href="/udrzba/">Údržba</a></li>
+        <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='realizace' }}"><a class="menu__link" href="/realizace/">Realizace</a></li>
+        <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='navrhy' }}"><a class="menu__link" href="/navrhy/">Návrhy</a></li>
+        <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='travniky' }}"><a class="menu__link" href="/travniky/">Trávníky</a></li>
+        <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='drevo' }}"><a class="menu__link" href="/drevo/">Práce se dřevem</a></li>
+        <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='bioodpad' }}"><a class="menu__link" href="/bioodpad/">Likvidace bioodpadu</a></li>
+        <li class="menu__item"><a class="menu__link" href="#kontakt">Kontakt</a></li>
+        <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='formular' }}"><a class="menu__link" href="/formular/">Kontaktní formulář</a></li>
+    </ul>
+
+</nav>
