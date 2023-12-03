@@ -55,7 +55,7 @@ body {
 }
 
 .button {
-  padding: 1rem 2rem;
+  
   margin-top: 1rem;
   border: 2px solid var(--cl-darkprimary);
   border-radius: 5px;
@@ -63,11 +63,14 @@ body {
   color: var(--cl-bg);
   font-family: "Work Sans", sans-serif;
   font-size: 1rem;
+  display: flex;
 }
 
 .button a {
+  padding: 1rem 2rem;
   text-decoration: none;
-  color: var(--cl-bg)
+  color: var(--cl-bg);
+  width: 100%;
 }
 
 .button:hover {
