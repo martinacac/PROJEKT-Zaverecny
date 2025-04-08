@@ -1,20 +1,25 @@
-#Internetové stránky - Zahradnické služby#
+Internetové stránky - Zahradnické služby
+=====================================================
+## HTML a CSS
 
-##HTML a CSS##
 Kód pro stránky jsem psala v html a nastylovala v css
 
-##Struktura stránek a šablona##
+## Struktura stránek a šablona
+
 Stránky jsou založeny na jednotné šabloně (ve složce _includes)
 
 Použila jsem šablonovací engine nunjucks (njk) a generátor statických webů eleventy/11ty 
 
-##Netlify##
+## Netlify
+
 Vzhledem k použití šablony jsem místo GitHub Pages využila pro publikování stránek službu Netlify 
 
-##Responzivita##
+## Responzivita
+
 Rozložení stránek a menu je responzivní (pomocí @media) s využitím gridu
 
-##Barvy a písmo##
+## Barvy a písmo
+
 Použité barvy jsem uložila do proměnných, abych je v případě potřeby mohla snadno změnit
 
 Pro podbarvení tlačítek a pozadí jednotlivých vtipů jsem použila selektor :nth-child()
@@ -25,7 +30,8 @@ Pro podbarvení v menu dle aktuální stránky jsem v šabloně použila podmín
 
 Font pro písmo jsem vybrala Work Sans na Google Fonts
 
-##Favicon##
+## Favicon
+
 Vektorový obrázek pro favicon jsem nadesignovala a sestavial ve vektorovém editoru Vectr
 
 Pro vygenerování faviconu jsem následně použila RealFaviconGenerator
